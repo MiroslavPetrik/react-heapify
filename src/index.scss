@@ -1,0 +1,92 @@
+$padding: 10px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+
+  & > * {
+    width: 100%;
+  }
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  label {
+    display: block;
+    margin-top: $padding;
+  }
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+  padding: 40px 0;
+}
+
+section {
+  flex: 1 1 auto;
+}
+
+.heap {
+  display: inline-block;
+  margin: 0 auto;
+  .root {
+    margin: 10px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+
+    &:only-child {
+      margin: 10px;
+    }
+
+    &.sink-path {
+      border: 1px solid lightgreen;
+    }
+  }
+}
+
+.heapify {
+  display: inline-block;
+  width: 100%;
+
+  .heapify {
+    width: 50%;
+  }
+}
