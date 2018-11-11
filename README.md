@@ -1,1 +1,3 @@
-# react-binary-search
+# react-heapify
+
+Recursive binary min heap in React,
